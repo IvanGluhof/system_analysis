@@ -5,6 +5,12 @@
 - docs - документация
 ## Инструкция 
 ### Arduino(C++)
+#### Распиновка Arduino Nano
+![Alt text](http://wiki.amperka.ru/_media/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B:arduino-nano:arduino-nano_pinout.png)
+1.1 Подключать датчики необходимо к пинам 2-7, 11. В конфигурации датчика (отдельный .h модуль, например DHT21.h из проекта) необходимо указать число соответствующее номеру пина.
+1.2 В проекте для пинов 9, 10 и 12 используется LED индикация. При необходимости убрать define'ы в config.h.
+2. Подключать SERIAL трансмитеры (Bluetooth/WiFi/прямая передача) необходимо к пинам RX и TX.
+#### Загрузка ПО в Arduino Nano
 1. Установить [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 2. Распаковать /code_zip/ArduinoSensorCKFH_Stock.zip.
 3. Запустить Arduino IDE и окрыть /NANO/MAIN/MainProject.ino (Файл -> Открыть -> выбрать в директории /NANO/MAIN).
